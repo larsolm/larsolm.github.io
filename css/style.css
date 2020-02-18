@@ -1,0 +1,55 @@
+html,
+body,
+header,
+.carousel {
+  height: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 850px)
+{
+	.navbar:not(.top-nav-collapse)
+	{
+		background: #1C2331!important;
+	}
+}
+
+@media only screen and (max-width:768px)
+{
+	.navbar
+	{
+		background-color:#1C2331
+	}
+}
+
+.navbar
+{
+	background-color:rgba(0,0,0,.2)
+}
+
+.page-footer, .top-nav-collapse
+{
+	background-color:#1C2331
+}
+
+.avatar
+{
+	border: 5px solid #fff;
+	max-width: 240px;
+}
+
+.horizontal-rule
+{
+	border: 3px solid #fff;
+	max-width: 250px;
+}
+
+.separator
+{
+	border: 3px solid #000;
+	max-width: 250px;
+}
+
+.location
+{
+	cursor: auto;
+}

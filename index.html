@@ -17,56 +17,121 @@
 		<link rel="stylesheet" href="css/mdb.min.css">
 		<!-- Custom styles -->
 		<link rel="stylesheet" href="css/style.css">
-
-		<!-- Navbar -->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+	</head>
+	
+	<body>
+	<!-- Header -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
 			<div class="container">
+
 				<!-- Brand -->
-				<p class="navbar-brand waves-effect">
-					<div class="font-weight-bold blue-text">Luke Larson</div>
-				</p>
+				<a class="navbar-brand font-weight-bold" href="#top" target="_blank">Luke Larson</a>
+		
+				<!-- Collapse -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
 				<!-- Links -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<!-- Right -->
-					<ul class="navbar-nav ml-auto nav-flex-icons">
+
+					<!-- Left -->
+					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a href="https://www.linkedin.com/in/larsolm/" class="nav-link waves-effect" target="_blank">
+							<a class="nav-link" href="#about" target="_blank">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects" target="_blank">Projects</a>
+						</li>
+					</ul>
+		
+					<!-- Right -->
+					<ul class="navbar-nav nav-flex-icons">
+						<li class="nav-item">
+							<a href="https://www.linkedin.com/in/larsolm/" class="nav-link" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
 						</li>
+
 						<li class="nav-item">
-							<a href="https://github.com/larsolm" class="nav-link waves-effect" target="_blank">
-								<i class="fab fa-github"></i>
+							<a href="https://github.com/larsolm/" class="nav-link border border-light rounded mr-2" target="_blank">
+								<i class="fab fa-github mr-2"></i>(Personal)
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="https://github.com/pirhosoft/" class="nav-link border border-light rounded" target="_blank">
+								<i class="fab fa-github mr-2"></i>(PiRhoSoft)
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-	</head>
-	
-	<body>
-		<!-- Start your project here-->  
-		<div style="height: 100vh">
-			<div class="flex-center flex-column">
-				<h1 class="text-hide animated fadeIn mb-4" style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">MDBootstrap</h1>
-				<h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-				<p class="animated fadeIn text-muted">MDB Team</p>
-			</div>
+
+		<!--Body-->
+		
+		<!-- Jumbotron -->
+		<div class="card card-image" style="background-image: url(img/jumbotron.jpg);">
+				<div class="text-white text-center animated fadeIn py-5 px-4">
+					<div class="py-5">
+						<!-- Content -->
+						<img class="rounded-circle fluid avatar" src="img/luke.png"/>
+						<h2 class="card-title h2 my-4 py-2">Luke Larson</h2>
+						<hr class="horizontal-rule while mx-auto">
+						<p class="my-4 pb-2 px-md-5 mx-md-5">Software Engineer | Co-founder of PiRhoSoft | Duke of Debugging | God of Garbage Collection</p>
+						<p class="location btn blue-gradient"><i class="fas fa-map-marker-alt left"></i> Seattle, WA</p>
+					</div>
+				</div>
 		</div>
-		<!-- End your project here-->
 
+		<!-- Content -->
+		<div class="container animated fadeIn py-5">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h3 class="h3 mb-5">Who am I?</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<p>Career - I am a former Firefight/EMT turned Software Engineer. While I loved serving my community I switched careers when I realized programming was my passion.
+						I co-founded PiRhoSoft, Inc. after realizing software development was my calling. I love making games but specialize in making tools and frameworks for aspiring and professional game developers. I have a passion for creating user friendly APIs and extensible systems with strong skills in numerous other avenues of software development. Bachelor of Science and Bachelor of Arts in Biochemistry and Public Health from the University of Washington. Go DAWGS!
+
+						See my full portfolio at https://larsolm.github.io
+						
+						Among various open source projects, I have two commercially released games both created from scratch in C++:
+						- Photon Phanatics - https://apps.apple.com/us/app/photon-phanatics/id1345493476
+						- The Art of War - https://www.microsoft.com/en-us/p/the-art-of-war-game/9pgj9477r23x
+						
+						Fun (weird) fact about me:
+						- I type using the Dvorak keyboard layout 0_o
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<p>Personal
+					</p>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<!--Footer-->
+		<footer class="page-footer text-center font-small mt-4 fadeIn">
+			<!--Copyright-->
+			<div class="footer-copyright py-3">
+				© 2020 Copyright: Luke Larson
+			</div>
+		</footer>
+		
 		<!-- jQuery -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<!-- Bootstrap tooltips -->
-		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script src="js/popper.min.js"></script>
 		<!-- Bootstrap core JavaScript -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<!-- MDB core JavaScript -->
-		<script type="text/javascript" src="js/mdb.min.js"></script>
-		<!-- Your custom scripts (optional) -->
-		<script type="text/javascript"></script>
-
+		<script src="js/mdb.min.js"></script>
+		<!-- Custom scripts -->
+		<script></script>
 	</body>
 </html>
