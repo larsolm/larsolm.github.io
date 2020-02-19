@@ -90,73 +90,88 @@
 
 		<!-- Content -->
 		<div class="container animated fadeIn py-5">
-			<div id="about" class="mb-5 z-depth-1 dark-grey-text p-5">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h3 class="font-weight-bold mb-4">Who am I?</h3>
-					</div>
+			<div id="about" class="card dark-grey-text">
+				<div class="header text-center py-3 unique-color-dark">
+					<h3 class="font-weight-bold white-text py-3">Who am I?</h3>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<p>	I am a former Firefight/EMT turned Software Engineer. While I loved serving my community in downtown Seattle, I switched careers to my lifelong hobby, programming, when I realized it was my real passion.</p>
+				<div class="p-4">
+					<div class="row">
+						<div class="col-md-6">
+							<p>	I am a former Firefighter/EMT turned Software Engineer. While I loved serving my community in downtown Seattle, I switched careers to my lifelong hobby, programming, when I realized it was my real passion.</p>
 
-							My brother and I founded PiRhoSoft, Inc. in 2016 to make games and game technology for aspiring and professional game developers. I have a passion for creating user friendly APIs and modular, extensible systems.
-							Game programming requires a broad array of knowledge and there is nothing I love more than learning and integrating with a new platform or framework.</p>
-							I have extensive experience in C++ and C# but I have worked with numerous other languages and have an innate ability to pick things up quickly.
-						</p>
+								My brother and I founded PiRhoSoft, Inc. in 2016 to make games and game technology for aspiring and professional game developers. I have a passion for creating user friendly APIs and modular, extensible systems.
+								Game programming requires a broad array of knowledge and there is nothing I love more than learning and integrating with a new platform or framework.</p>
+								I have extensive experience in C++ and C# but I have worked with numerous other languages and have an innate ability to pick things up quickly.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<p>	I am a positive and optimistic person and am always interested in bettering myself and meeting new interesting people.</p>
+							<hr>
+							<h5 class="h5 mb-3">Other Things</h5>
+							<p><i style="width: 30px" class="far fa-keyboard"></i>I type using the <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">Dvorak</a> keyboard layout 0_o</p>
+							<p><i style="width: 30px" class="fas fa-gamepad"></i>Made my first <a href="">video game</a> in Flash when I was 12</p>
+							<p><i style="width: 30px" class="fas fa-globe-americas"></i>Studied in Ecuador for 6 months</p>
+							<p><i style="width: 30px" class="fas fa-football-ball"></i>I coached football to 12-13 year olds</p>
+							<p><i style="width: 30px" class="fas fa-jedi"></i>I am unfortunately, not named after Luke Skywalker</p>
+						</div>
+						<div class="col-lg-12 text-center">
+							<a href="https://www.linkedin.com/in/larsolm/" class="btn blue-gradient btn-rounded" target="_blank">
+								<i class="fab fa-linkedin mr-2"></i>LinkedIn
+							</a>
+							<a href="resume.pdf" class="btn blue-gradient btn-rounded" target="_blank">
+								<i class="far fa-file-alt mr-2"></i>Resumé
+							</a>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<p>	I am a positive and optimistic person and am always interested in bettering myself and meeting new interesting people.</p>
-						<hr>
-						<h5 class="mb-3">Other Things</h5>
-						<p class="grey-text"><i style="width: 30px" class="far fa-keyboard"></i>I type using the <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">Dvorak</a> keyboard layout 0_o</p>
-						<p class="grey-text"><i style="width: 30px" class="fas fa-gamepad"></i>Made my first <a href="">video game</a> in Flash when I was 12</p>
-						<p class="grey-text"><i style="width: 30px" class="fas fa-globe-americas"></i>Studied in Ecuador for 6 months</p>
-						<p class="grey-text"><i style="width: 30px" class="fas fa-football-ball"></i>I coached football to 12-13 year olds</p>
-						<p class="grey-text"><i style="width: 30px" class="fas fa-jedi"></i>I am unfortunately, not named after Luke Skywalker</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<a href="https://www.linkedin.com/in/larsolm/" class="btn blue-gradient btn-rounded" target="_blank">
-							<i class="fab fa-linkedin mr-2"></i>LinkedIn
-						</a>
-						<a href="resume.pdf" class="btn blue-gradient btn-rounded" target="_blank">
-							<i class="far fa-file-alt mr-2"></i>Resumé
-						</a>
-					</div>
 				</div>
 			</div>
-			<hr>
-			<div id="projects" class="row">
-				<div class="col-lg-12 text-center">
-					<h3 class="h3 mb-5">Projects<h3>
+			<div id="projects" class="mt-5 card">
+				<div class="header text-center py-3 unique-color-dark">
+					<h3 class="font-weight-bold white-text py-3">Projects<h3>
+				</div>
+				<div class="p-4">
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<p>
-					</p>
+			<div id="contact" class="mt-5 card">
+				<div class="header text-center py-3 unique-color-dark">
+					<h3 class="font-weight-bold white-text py-3">Contact<h3>
 				</div>
-				<div class="col-lg-6">
-					<p>
-					</p>
+				<div class="p-4">
+					<form id="contactForm">
+						<div class="md-form">
+							<input type="text" id="name-control" class="form-control" name="name" required>
+							<label for="name-control">Your name</label>
+						</div>
+						<div class="md-form">
+							<input type="email" id="email-control" class="form-control" name="email" required>
+							<label for="email-control">Your e-mail</label>
+						</div>
+						<div class="md-form">
+							<textarea type="text" id="content-control" class="form-control md-textarea" rows="2" name="content" required></textarea>
+							<label for="content-control">Message</label>
+							<div class="form-group"></div>
+						</div>
+						<div class="text-center">
+							<button type="submit" id="submit" class="btn blue-gradient btn-rounded">
+								<i class="far fa-envelope mr-2"></i>Send
+								<span class="ml-2 status" id="status">
+									<span class="spinner-border" role="status"></span>
+								</span>
+							</button>
+						</div>
+					</form>
 				</div>
-			</div>
-			<hr>
-			<div id="contact" class="row">
-				<div class="col-lg-12 text-center">
-					<h3 class="h3 mb-5">Contact<h3>
+				<div id="error" class="error alert alert-danger alert-dismissible fade show mb-0" role="alert">
+					<strong>Error:</strong> You can always manually send me a message via the e-mail in my <a href="resume.pdf" class="alert-link" target="_blank">resumé.</a>
+					<button id="error-close" type="button" class="close">
+						<span>&times;</span>
+					</button>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<p>
-					</p>
-				</div>
-				<div class="col-lg-6">
-					<p>
-					</p>
+				<div id="success" class="success alert alert-success alert-dismissible fade show mb-0" role="alert">
+					<strong>Success!</strong> Thanks for sending me a message! I'll get in touch with you ASAP.
+					<button id="success-close" type="button" class="close">
+						<span>&times;</span>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -178,6 +193,6 @@
 		<!-- MDB core JavaScript -->
 		<script src="js/mdb.min.js"></script>
 		<!-- Custom scripts -->
-		<script></script>
+		<script src="contact-form-api/contact.js"></script>
 	</body>
 </html>

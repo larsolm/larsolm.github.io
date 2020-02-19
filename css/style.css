@@ -53,3 +53,45 @@ header,
 {
 	cursor: auto;
 }
+
+.card .header
+{
+	border-top-left-radius: .3rem;
+	border-top-right-radius: .3rem;
+}
+
+.status
+{
+	display: none;
+}
+
+.status--waiting
+{
+	display: inline;
+}
+
+.status .spinner-border
+{
+	max-height: 15px;
+	max-width: 15px;
+}
+
+.success
+{
+	display: none;
+}
+
+.success--shown
+{
+	display: block;
+}
+
+.error
+{
+	display: none;
+}
+
+.error--shown
+{
+	display: block;
+}
