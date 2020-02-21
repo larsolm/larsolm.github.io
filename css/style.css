@@ -5,6 +5,11 @@ header,
   height: 100%;
 }
 
+html
+{
+	scroll-behavior: smooth;
+}
+
 @media (min-width: 800px) and (max-width: 850px)
 {
 	.navbar:not(.top-nav-collapse)
@@ -26,9 +31,20 @@ header,
 	background-color:rgba(0,0,0,.2)
 }
 
+.navbar .nav-item .nav-link.active
+{
+	background-color: rgba(255,255,255,0.1);
+}
+
 .page-footer, .top-nav-collapse
 {
 	background-color:#1C2331
+}
+
+.header-background
+{
+	background-image: url(img/jumbotron.jpg);
+	background-position: center;
 }
 
 .avatar

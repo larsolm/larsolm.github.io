@@ -19,13 +19,13 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	
-	<body>
-	<!-- Header -->
+	<body data-spy="scroll" data-target=".active-scroll" data-offset="500">
+
+		<!-- Navbar -->
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
 			<div class="container">
-
 				<!-- Brand -->
-				<a class="navbar-brand font-weight-bold" href="#top">Luke Larson</a>
+				<a class="navbar-brand font-weight-bold" href="#">Luke Larson</a>
 		
 				<!-- Collapse -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -34,48 +34,46 @@
 
 				<!-- Links -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+					
 					<!-- Left -->
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#about">About Me</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#projects">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">Contact</a>
-						</li>
-					</ul>
-		
+					<div class="active-scroll mr-auto">
+						<ul class="nav navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#projects">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+
 					<!-- Right -->
 					<ul class="navbar-nav nav-flex-icons">
+						<!-- LinkedIn -->
 						<li class="nav-item">
 							<a href="https://www.linkedin.com/in/larsolm/" class="nav-link" target="_blank">
 								<i class="fab fa-linkedin"></i>
 							</a>
 						</li>
 
-						<li class="nav-item">
-							<a href="https://github.com/larsolm/" class="nav-link border border-light rounded mr-2" target="_blank">
-								<i class="fab fa-github mr-2"></i>(Personal)
-							</a>
-						</li>
-
-						<li class="nav-item">
-							<a href="https://github.com/pirhosoft/" class="nav-link border border-light rounded" target="_blank">
-								<i class="fab fa-github mr-2"></i>(PiRhoSoft)
-							</a>
+						<!-- GitHub -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="fab fa-github"></i></a>
+							<div class="dropdown-menu dropdown-menu-right dropdown-primary">
+								<a class="dropdown-item" href="https://github.com/larsolm/" target="_blank"><i class="fas fa-user mr-2"></i>Personal</a>
+								<a class="dropdown-item" href="https://github.com/pirhosoft/" target="_blank"><i class="fas fa-user-tie mr-2"></i>PiRhoSoft</a>
+							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<!--Body-->
-		
 		<!-- Jumbotron -->
-		<div id="top" class="card card-image" style="background-image: url(img/jumbotron.jpg);">
+		<div class="card card-image" style="background-image: url(img/jumbotron.jpg); background-position: center;">
 				<div class="text-white text-center animated fadeIn py-5 px-4">
 					<div class="py-5">
 						<!-- Content -->
@@ -88,8 +86,21 @@
 				</div>
 		</div>
 
+		<!-- Modal Video -->
+		<div class="modal fade" id="art-of-war" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+				<iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/4xOs599U6OQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+			</div>
+		</div>
+
 		<!-- Content -->
 		<div class="container animated fadeIn py-5">
+
+			<!-- About -->
 			<div id="about" class="card dark-grey-text">
 				<div class="header text-center py-3 unique-color-dark">
 					<h3 class="font-weight-bold white-text py-3">Who am I?</h3>
@@ -98,21 +109,20 @@
 					<div class="row">
 						<div class="col-md-6">
 							<p>	I am a former Firefighter/EMT turned Software Engineer. While I loved serving my community in downtown Seattle, I switched careers to my lifelong hobby, programming, when I realized it was my real passion.</p>
-
-								My brother and I founded PiRhoSoft, Inc. in 2016 to make games and game technology for aspiring and professional game developers. I have a passion for creating user friendly APIs and modular, extensible systems.
+							<p>	My brother and I founded PiRhoSoft, Inc. in 2016 to make games and game technology for aspiring and professional game developers. I have a passion for creating user friendly APIs and modular, extensible systems.
 								Game programming requires a broad array of knowledge and there is nothing I love more than learning and integrating with a new platform or framework.</p>
-								I have extensive experience in C++ and C# but I have worked with numerous other languages and have an innate ability to pick things up quickly.
-							</p>
+							<p> I have extensive experience in C# and C++ but I have worked with numerous other languages and have an innate ability to understand and learn new things quickly.</p>
 						</div>
 						<div class="col-md-6">
-							<p>	I am a positive and optimistic person and am always interested in bettering myself and meeting new interesting people.</p>
+							<p>	I possess a constant thirst for knowledge and am always seeking to better myself and meet new interesting people.
+								I love working with others and my positivity and optimism fosters an environment that helps everybody achieve better outcomes. </p>
 							<hr>
 							<h5 class="h5 mb-3">Other Things</h5>
-							<p><i style="width: 30px" class="far fa-keyboard"></i>I type using the <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">Dvorak</a> keyboard layout 0_o</p>
-							<p><i style="width: 30px" class="fas fa-gamepad"></i>Made my first <a href="">video game</a> in Flash when I was 12</p>
-							<p><i style="width: 30px" class="fas fa-globe-americas"></i>Studied in Ecuador for 6 months</p>
-							<p><i style="width: 30px" class="fas fa-football-ball"></i>I coached football to 12-13 year olds</p>
-							<p><i style="width: 30px" class="fas fa-jedi"></i>I am unfortunately, not named after Luke Skywalker</p>
+							<p class="mb-2"><i style="width: 30px" class="fas fa-keyboard"></i>I type using the <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">Dvorak</a> keyboard layout <i class="far fa-grin-tongue-wink"></i></p>
+							<p class="mb-2"><i style="width: 30px" class="fas fa-gamepad"></i>Made my first <a href="">video game</a> in Flash when I was 12</p>
+							<p class="mb-2"><i style="width: 30px" class="fas fa-globe-americas"></i>Studied in Ecuador for 6 months</p>
+							<p class="mb-2"><i style="width: 30px" class="fas fa-football-ball"></i>Coached youth football to 12-13 year olds</p>
+							<p class="mb-2"><i style="width: 30px" class="fas fa-jedi"></i>I am unfortunately, not named after Luke Skywalker</p>
 						</div>
 						<div class="col-lg-12 text-center">
 							<a href="https://www.linkedin.com/in/larsolm/" class="btn blue-gradient btn-rounded" target="_blank">
@@ -125,13 +135,123 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Projects -->
 			<div id="projects" class="mt-5 card">
 				<div class="header text-center py-3 unique-color-dark">
-					<h3 class="font-weight-bold white-text py-3">Projects<h3>
+					<h3 class="font-weight-bold white-text py-3">Projects/Highlights<h3>
 				</div>
 				<div class="p-4">
+
+					<!-- The Art of War -->
+					<section class="dark-grey-text">
+
+						<!-- Header -->
+						<h3 class="text-center font-weight-bold mt-3 mb-4">The Art of War</h3>
+						<p class="text-center text-muted w-responsive mx-auto mb-4">A commercially released Xbox and PC game created as part of Microsoft’s Dream.Build.Play. competition built in 6 months entirely from scratch in C++</p>
+
+						<!-- Row -->
+						<div class="row">
+
+							<!-- Content -->
+							<div class="col-lg-7">
+								<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
+									<li class="d-flex justify-content-center pl-4">
+										<span class="fa-li"><i class="fas fa-network-wired fa-2x indigo-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Networking</h5>
+											<p class="text-muted">Implemented realtime client/server network architecture with input prediction and lag compensation.</p>
+										</div>
+									</li>
+									<li class="d-flex justify-content-center pl-4">
+										<span class="fa-li"><i class="fas fa-running fa-2x light-green-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Animation</h5>
+											<p class="text-muted">Wrote an animation system using inverse kinematics to simulate natural arm and leg movement.</p>
+										</div>
+									</li>
+									<li class="d-flex justify-content-center pl-4">
+										<span class="fa-li"><i class="fas fa-brain fa-2x deep-purple-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">AI</h5>
+											<p class="text-muted">Developed innovative AI architecture for platform traversal using navigation graphs and A*.</p>
+										</div>
+									</li>
+									<li class="d-flex justify-content-center pl-4">
+										<span class="fa-li"><i class="fas fa-car-crash fa-2x red-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Physics</h5>
+											<p class="text-muted mb-0">Created a custom swept collision system utilizing the separating axis theorem </p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Image -->
+							<div class="col-lg-5 justify-content-center">
+								<div class="view z-depth-1-half rounded">
+									<img class="rounded img-fluid" src="img/art-of-war-title.png" alt="Video title">
+									<div class="mask flex-center">
+										<a id="play" class="btn-primary btn-lg" data-toggle="modal" data-target="#art-of-war"><i class="text-white fas fa-play"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<hr class="my-5"> 
+
+					<!-- Pargon -->
+					<section class="dark-grey-text">
+
+						<!-- Header -->
+						<h3 class="text-center font-weight-bold mb-4">Pargon</h3>
+						<p class="text-center text-muted w-responsive mx-auto mb-5">A cross platform game and application framework written in C++</p>
+
+						<!-- Row -->
+						<div class="row">
+
+							<!-- Image -->
+							<div class="col-lg-5 mb-lg-0 mb-5">
+								<img src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg" class="img-fluid rounded z-depth-1" alt="Sample project image">
+							</div>
+
+							<!-- Content -->
+							<div class="col-lg-7">
+								<ul class="list-unstyled fa-ul mb-5">
+									<li class="pl-4">
+										<span class="fa-li"><i class="fas fa-images fa-2x cyan-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Graphics</h5>
+											<p class="text-muted">Implemented multiple graphics abstraction layers: DirectX11, DirectX12, OpenGL, and Metal</p>
+										</div>
+									</li>
+									<li class="pl-4">
+										<span class="fa-li"><i class="fas fa-code fa-2x purple-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Crossplatform</h5>
+											<p class="text-muted">Created other platform abstraction layers for input, audio, and application including OpenAL, XAudio, XInput to support builds on Win32, UWP, OSX, iOS</p>
+										</div>
+									</li>
+									<li class="pl-4">
+										<span class="fa-li"><i class="fas fa-th-large fa-2x orange-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">UI</h5>
+											<p class="text-muted mb-0">Developed UI layout and styling system</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</section>
+
+					<hr class="my-5">
+
 				</div>
 			</div>
+
+			<!-- Contact -->
 			<div id="contact" class="mt-5 card">
 				<div class="header text-center py-3 unique-color-dark">
 					<h3 class="font-weight-bold white-text py-3">Contact<h3>
@@ -180,7 +300,7 @@
 		<footer class="page-footer text-center font-small mt-4 fadeIn">
 			<!--Copyright-->
 			<div class="footer-copyright py-3">
-				© 2020 Copyright: Luke Larson
+				© 2020 - Luke Larson
 			</div>
 		</footer>
 		
@@ -194,5 +314,6 @@
 		<script src="js/mdb.min.js"></script>
 		<!-- Custom scripts -->
 		<script src="contact-form-api/contact.js"></script>
+		<script src="js/modalPlay.js"></script>
 	</body>
 </html>
