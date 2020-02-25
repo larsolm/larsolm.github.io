@@ -4,8 +4,6 @@ const submit = document.getElementById('submit')
 const status = document.getElementById('status')
 const requestSuccess = document.getElementById('success')
 const requestError = document.getElementById('error')
-const successClose = document.getElementById('success-close')
-const errorClose = document.getElementById('error-close')
 
 function post(url, body, callback)
 {
@@ -82,14 +80,5 @@ form.addEventListener('submit', function(e)
 	})
 })
 
-successClose.addEventListener('click', function(e)
-{
-	e.preventDefault()
-	hideSuccess()
-})
-
-errorClose.addEventListener('click', function(e)
-{
-	e.preventDefault()
-	hideError()
-})
+$("#success-close").click(hideSuccess);
+$("#error-close").click(error-close);
