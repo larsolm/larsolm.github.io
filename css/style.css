@@ -36,6 +36,12 @@ html
 	background-color: rgba(255,255,255,0.1);
 }
 
+.dropdown-ins .dropdown-item.active
+{
+	background-color: #1C2331;
+	color: #fff;
+}
+
 .page-footer, .top-nav-collapse
 {
 	background-color:#1C2331

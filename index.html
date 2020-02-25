@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	
-	<body data-spy="scroll" data-target=".active-scroll" data-offset="500">
+	<body data-spy="scroll" data-target=".active-scroll" data-offset="700">
 
 		<!-- Navbar -->
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -38,12 +38,22 @@
 					<!-- Left -->
 					<div class="active-scroll mr-auto">
 						<ul class="nav navbar-nav">
+							<!-- About -->
 							<li class="nav-item">
 								<a class="nav-link" href="#about">About Me</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#projects">Projects</a>
+							<!-- Projects -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
+								<div class="dropdown-menu dropdown-ins">
+									<a class="dropdown-item" href="#the-art-of-war"><i class="fas fa-paint-brush ml-2 mr-3"></i>The Art of War</a>
+									<a class="dropdown-item" href="#pargon"><i class="fas fa-plug ml-2 mr-3"></i>Pargon</a>
+									<a class="dropdown-item" href="#composition"><i class="fas fa-wrench ml-2 mr-3"></i>PiRho Composition</a>
+									<a class="dropdown-item" href="#photon-phanatics"><i class="fas fa-lightbulb ml-2 mr-3"></i>Photon Phanatics</a>
+									<a class="dropdown-item" href="#supplemental"><i class="fas fa-cogs ml-2 mr-3"></i>Suplemental</a>
+								</div>
 							</li>
+							<!-- Contact -->
 							<li class="nav-item">
 								<a class="nav-link" href="#contact">Contact</a>
 							</li>
@@ -61,10 +71,10 @@
 
 						<!-- GitHub -->
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i class="fab fa-github"></i></a>
-							<div class="dropdown-menu dropdown-menu-right dropdown-primary">
-								<a class="dropdown-item" href="https://github.com/larsolm/" target="_blank"><i class="fas fa-user mr-2"></i>Personal</a>
-								<a class="dropdown-item" href="https://github.com/pirhosoft/" target="_blank"><i class="fas fa-user-tie mr-2"></i>PiRhoSoft</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fab fa-github"></i></a>
+							<div class="dropdown-menu dropdown-primary">
+								<a class="dropdown-item" href="https://github.com/larsolm/" target="_blank"><i class="fas fa-user ml-2 mr-3"></i>Personal</a>
+								<a class="dropdown-item" href="https://github.com/pirhosoft/" target="_blank"><i class="fas fa-user-tie ml-2 mr-3"></i>PiRhoSoft</a>
 							</div>
 						</li>
 					</ul>
@@ -87,21 +97,32 @@
 		</div>
 
 		<!-- Modal Video -->
-		<div class="modal fade" id="art-of-war" tabindex="-1" role="dialog">
+		<div class="modal fade" id="art-of-war-player" tabindex="-1" role="dialog">
 			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-				<iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/4xOs599U6OQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div class="modal-content">
+					<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+						<iframe id="taow-player" class="embed-responsive-item" src="https://www.youtube.com/embed/4xOs599U6OQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
+		</div>
+		
+		<!-- Modal Video -->
+		<div class="modal fade" id="photon-phanatics-player" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+						<iframe id="pp-player" class="embed-responsive-item" src="https://www.youtube.com/embed/oZ30GlaklKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<!-- Content -->
-		<div class="container animated fadeIn py-5">
+		<div class="container animated fadeIn py-5" id="about">
 
 			<!-- About -->
-			<div id="about" class="card dark-grey-text">
+			<div class="card dark-grey-text">
 				<div class="header text-center py-3 unique-color-dark">
 					<h3 class="font-weight-bold white-text py-3">Who am I?</h3>
 				</div>
@@ -116,6 +137,7 @@
 						<div class="col-md-6">
 							<p>	I possess a constant thirst for knowledge and am always seeking to better myself and meet new interesting people.
 								I love working with others and my positivity and optimism fosters an environment that helps everybody achieve better outcomes. </p>
+							<p>	Check out my highlighted <a href="#projects">projects</a> below or check out my <a href="https://github.com/larsolm/">github</a> to see the various projects I have worked on.</p>
 							<hr>
 							<h5 class="h5 mb-3">Other Things</h5>
 							<p class="mb-2"><i style="width: 30px" class="fas fa-keyboard"></i>I type using the <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">Dvorak</a> keyboard layout <i class="far fa-grin-tongue-wink"></i></p>
@@ -137,11 +159,12 @@
 			</div>
 
 			<!-- Projects -->
-			<div id="projects" class="mt-5 card">
+			<div id="the-art-of-war" class="mt-5 card">
 				<div class="header text-center py-3 unique-color-dark">
 					<h3 class="font-weight-bold white-text py-3">Projects/Highlights<h3>
 				</div>
-				<div class="p-4">
+
+				<div class="p-4 pb-5">
 
 					<!-- The Art of War -->
 					<section class="dark-grey-text">
@@ -151,7 +174,7 @@
 						<p class="text-center text-muted w-responsive mx-auto mb-4">A commercially released Xbox and PC game created as part of Microsoft’s Dream.Build.Play. competition built in 6 months entirely from scratch in C++</p>
 
 						<!-- Row -->
-						<div class="row">
+						<div class="row align-items-center">
 
 							<!-- Content -->
 							<div class="col-lg-7">
@@ -188,18 +211,18 @@
 							</div>
 
 							<!-- Image -->
-							<div class="col-lg-5 justify-content-center">
+							<div class="col-lg-5">
 								<div class="view z-depth-1-half rounded">
-									<img class="rounded img-fluid" src="img/art-of-war-title.png" alt="Video title">
+									<img class="rounded img-fluid" src="img/art-of-war-title.png">
 									<div class="mask flex-center">
-										<a id="play" class="btn-primary btn-lg" data-toggle="modal" data-target="#art-of-war"><i class="text-white fas fa-play"></i></a>
+										<a id="taow-play" class="btn-primary btn-lg" data-toggle="modal" data-target="#art-of-war-player"><i class="text-white fas fa-play"></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
 
-					<hr class="my-5"> 
+					<hr class="my-5" id="pargon"> 
 
 					<!-- Pargon -->
 					<section class="dark-grey-text">
@@ -209,7 +232,7 @@
 						<p class="text-center text-muted w-responsive mx-auto mb-5">A cross platform game and application framework written in C++</p>
 
 						<!-- Row -->
-						<div class="row">
+						<div class="row align-items-center">
 
 							<!-- Image -->
 							<div class="col-lg-5 mb-lg-0 mb-5">
@@ -218,7 +241,7 @@
 
 							<!-- Content -->
 							<div class="col-lg-7">
-								<ul class="list-unstyled fa-ul mb-5">
+								<ul class="list-unstyled fa-ul mb-0">
 									<li class="pl-4">
 										<span class="fa-li"><i class="fas fa-images fa-2x cyan-text"></i></span>
 										<div>
@@ -227,7 +250,7 @@
 										</div>
 									</li>
 									<li class="pl-4">
-										<span class="fa-li"><i class="fas fa-code fa-2x purple-text"></i></span>
+										<span class="fa-li"><i class="fas fa-laptop-code fa-2x purple-text"></i></span>
 										<div>
 											<h5 class="font-weight-bold mb-1">Crossplatform</h5>
 											<p class="text-muted">Worked with multiple platform layers for input, audio, and application including OpenAL, XAudio, XInput to support builds on Win32, UWP, OSX, iOS</p>
@@ -246,23 +269,23 @@
 						</div>
 					</section>
 
-					<hr class="my-5">
+					<hr class="my-5" id="composition">
 
 					<!-- Unity Tool Suite -->
 					<section class="dark-grey-text">
 
 						<!-- Header -->
-						<h3 class="text-center font-weight-bold mt-3 mb-4">Unity Composition and Tool Suite</h3>
+						<h3 class="text-center font-weight-bold mt-3 mb-4">PiRho Composition and Unity Tool Suite</h3>
 						<p class="text-center text-muted w-responsive mx-auto mb-4">Open source tool package built in C# for <a href="https://unity.com/">Unity</a></p>
 
 						<!-- Row -->
-						<div class="row">
+						<div class="row align-items-center">
 
 							<!-- Content -->
-							<div class="col-lg-7">
+							<div class="col-lg-6">
 								<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
 									<li class="d-flex pl-4">
-										<span class="fa-li"><i class="fas fa-sitemap fa-2x blue-grey-text"></i></span>
+										<span class="fa-li"><i class="fas fa-code-branch fa-2x blue-grey-text"></i></span>
 										<div>
 											<h5 class="font-weight-bold mb-1">Composition</h5>
 											<p class="text-muted">Created asyncronous, node based, dynamic event system to drive cinema scenes and other gameplay sequences.</p>
@@ -279,7 +302,7 @@
 										<span class="fa-li"><i class="fas fa-terminal fa-2x amber-text"></i></span>
 										<div>
 											<h5 class="font-weight-bold mb-1">Expressions</h5>
-											<p class="text-muted">Implemented an expression parser, lexer, and evalutor</p>
+											<p class="text-muted">Implemented an expression lexer, parser, and evaluator</p>
 										</div>
 									</li>
 									<li class="d-flex pl-4">
@@ -300,17 +323,120 @@
 										<span class="fa-li"><i class="fas fa-book fa-2x orange-text"></i></span>
 										<div>
 											<h5 class="font-weight-bold mb-1">Documentation Generation</h5>
-											<p class="text-muted mb-0">Designed documentation generator and procedures for maintaining a readable, robust API reference, easily hosted as static web page or pdf.</p>
+											<p class="text-muted mb-0">Designed documentation generator and procedures for maintaining a readable, robust <a href="https://pirhosoft.com/projects/unity-composition/documentation/#/v10/">API reference and manual</a></a>, easily hosted as static web page or pdf.</p>
 										</div>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Image -->
-							<div class="col-lg-5 justify-content-center">
+							<div class="col-lg-6">
 								<div class="view z-depth-1-half rounded">
-									<img src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg" class="rounded img-fluid">
+									<img src="img/composition.png" class="rounded img-fluid">
 								</div>
+							</div>
+						</div>
+					</section>
+
+					<hr class="my-5" id="photon-phanatics"> 
+
+					<!-- Photon Phanatics -->
+					<section class="dark-grey-text" id="photon-phanatics">
+
+						<!-- Header -->
+						<h3 class="text-center font-weight-bold mb-4">Photon Phanatics</h3>
+						<p class="text-center text-muted w-responsive mx-auto mb-5">
+							A clever and difficult mobile puzzle game released on the <a href="https://apps.apple.com/us/app/photon-phanatics/id1345493476">iOS App Store</a>
+							built in C++ and Objective-C using <a href="#pargon">Pargon</a>.
+						</p>
+
+						<!-- Row -->
+						<div class="row align-items-center">
+
+							<!-- Image -->
+							<div class="col-lg-5 mb-lg-0 mb-5">
+								<div class="view z-depth-1-half rounded">
+									<img class="rounded img-fluid" src="img/photon-phanatics.png">
+									<div class="mask flex-center">
+										<a id="pp-play" class="btn-primary btn-lg" data-toggle="modal" data-target="#photon-phanatics-player"><i class="text-white fas fa-play"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Content -->
+							<div class="col-lg-7">
+								<ul class="list-unstyled fa-ul mb-0">
+									<li class="pl-4">
+										<span class="fa-li"><i class="fas fa-lightbulb fa-2x cyan-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Lighting Model</h5>
+											<p class="text-muted">Implemented a realtime lighting model with normal maps and 2D occlusion/shadows</p>
+										</div>
+									</li>
+									<li class="pl-4">
+										<span class="fa-li"><i class="fas fa-puzzle-piece fa-2x yellow-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Creativity</h5>
+											<p class="text-muted">Created almost 100 logic puzzles</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<hr class="my-5" id="supplemental">
+
+					<!-- Supplemental -->
+					<section class="dark-grey-text">
+
+						<!-- Header -->
+						<h3 class="text-center font-weight-bold mt-3 mb-4">Other Supplemental Projects</h3>
+						<p class="text-center text-muted w-responsive mx-auto mb-4">In addition to my job, coding is also my biggest hobby so I always have personal projects going to continue learning and just have fun!</p>
+
+						<!-- Row -->
+						<div class="row align-items-center">
+
+							<!-- Content -->
+							<div class="col-lg-12">
+								<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
+									<li class="d-flex pl-4">
+										<span class="fa-li"><i class="fas fa-tshirt fa-2x pink-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Attire by Natalia</h5>
+											<p class="text-muted">
+												Designed and built a Wordpress website for my SO's personal blog. I created the Wordpress theme from scratch using a combination of PHP, HTML, JS, and CSS.
+												It uses <a href="https://getbootstrap.com/">Bootstrap</a> for a modern, responsive website and adheres to Google's <a href="https://material.io/design/">material design</a> principles.
+											</p>
+										</div>
+									</li>
+									<li class="d-flex pl-4">
+										<span class="fa-li"><i class="fas fa-ambulance fa-2x indigo-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Maine EMS</h5>
+											<p class="text-muted">A prototype iOS and Android app created for the state of Maine’s EMS protocol reference. It is built using Xamarin and adhering to <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm">
+												MVVM</a> architectural pattern seen in most web interfaces. The app parses and analyzes Maine's EMS PDFs to convert them to a native and more readable format.
+											</p>
+										</div>
+									</li>
+									<li class="d-flex pl-4">
+										<span class="fa-li"><i class="fas fa-map-marked-alt fa-2x green-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">Middle Drive</h5>
+											<p class="text-muted">
+												A <a href="http://middle-drive.herokuapp.com/">webapp</a> created in Python using Django as a backend and Bootstrap/material for the frontend.
+												Utilizes Google Maps APIs to find a middle driving social destination between addresses so that fair social outings can be arranged in the future.
+											</p>
+										</div>
+									</li>
+									<li class="d-flex pl-4">
+										<span class="fa-li"><i class="fas fa-code fa-2x cyan-text"></i></span>
+										<div>
+											<h5 class="font-weight-bold mb-1">(meta)</h5>
+											<p class="text-muted">This portfolio site!</p>
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</section>
@@ -325,19 +451,31 @@
 				</div>
 				<div class="p-4">
 					<form id="contactForm">
-						<div class="md-form">
-							<input type="text" id="name-control" class="form-control" name="name" required>
-							<label for="name-control">Your name</label>
-						</div>
-						<div class="md-form">
-							<input type="email" id="email-control" class="form-control" name="email" required>
-							<label for="email-control">Your e-mail</label>
-						</div>
-						<div class="md-form">
-							<textarea type="text" id="content-control" class="form-control md-textarea" rows="2" name="content" required></textarea>
-							<label for="content-control">Message</label>
-							<div class="form-group"></div>
-						</div>
+						<ul class="list-unstyled fa-ul mb-0">
+							<li class="d-flex pl-4 align-items-center">
+								<span class="fa-li"><i class="fas fa-user fa-2x text-primary"></i></span>
+								<div class="md-form flex-fill">
+									<input type="text" id="name-control" class="form-control" name="name" required>
+									<label for="name-control">Your name</label>
+								</div>
+							</li>
+							<li class="d-flex pl-4 align-items-center">
+								<span class="fa-li"><i class="fas fa-at fa-2x text-primary"></i></span>
+								<div class="md-form flex-fill">
+									<input type="email" id="email-control" class="form-control" name="email" required>
+									<label for="email-control">Your e-mail</label>
+								</div>
+							</li>
+							<li class="d-flex pl-4">
+								<span class="fa-li mt-4 pt-2"><i class="fas fa-comment-alt fa-2x text-primary"></i></span>
+								<div class="md-form flex-fill">
+									<textarea type="text" id="content-control" class="form-control md-textarea" rows="2" name="content" required></textarea>
+									<label for="content-control">Your message</label>
+									<div class="form-group"></div>
+								</div>
+							</li>
+						</ul>
+
 						<div class="text-center">
 							<button type="submit" id="submit" class="btn blue-gradient btn-rounded">
 								<i class="far fa-envelope mr-2"></i>Send
@@ -346,6 +484,7 @@
 								</span>
 							</button>
 						</div>
+
 					</form>
 				</div>
 				<div id="error" class="error alert alert-danger alert-dismissible fade show mb-0" role="alert">
@@ -367,7 +506,7 @@
 		<footer class="page-footer text-center font-small mt-4 fadeIn">
 			<!--Copyright-->
 			<div class="footer-copyright py-3">
-				© 2020 - Luke Larson
+				© 2020 Luke Larson
 			</div>
 		</footer>
 		
